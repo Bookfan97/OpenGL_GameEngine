@@ -1,0 +1,2 @@
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Debug\OpenGLCourseApp.exe
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Debug\OpenGLCourseApp.pdb
