@@ -1,2 +1,7 @@
-﻿  main.cpp
+﻿  Mesh.cpp
+  Shader.cpp
+  Window.cpp
+  main.cpp
+  Generating Code...
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(47): warning C4715: 'Window::Initialise': not all control paths return a value
   OpenGLCourseApp.vcxproj -> E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Debug\OpenGLCourseApp.exe
