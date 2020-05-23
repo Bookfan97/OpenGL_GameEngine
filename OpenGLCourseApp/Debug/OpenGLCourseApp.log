@@ -1,7 +1,11 @@
-﻿  Mesh.cpp
-  Shader.cpp
-  Window.cpp
+﻿  Window.cpp
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(107,22): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(108,22): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(111,28): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(112,40): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(113,21): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(114,21): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
   main.cpp
   Generating Code...
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(47): warning C4715: 'Window::Initialise': not all control paths return a value
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(58): warning C4715: 'Window::Initialise': not all control paths return a value
   OpenGLCourseApp.vcxproj -> E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Debug\OpenGLCourseApp.exe
