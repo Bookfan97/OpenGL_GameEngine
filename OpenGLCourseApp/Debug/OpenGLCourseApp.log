@@ -1,3 +1,2 @@
-﻿  main.cpp
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(63,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+﻿  Texture.cpp
   OpenGLCourseApp.vcxproj -> E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Debug\OpenGLCourseApp.exe
