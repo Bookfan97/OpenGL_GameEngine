@@ -1,16 +1,7 @@
-﻿  Camera.cpp
-  Light.cpp
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Light.cpp(21,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Light.cpp(22,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Light.cpp(23,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Light.cpp(24,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
-  Mesh.cpp
-  Shader.cpp
-  main.cpp
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(99,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(115,94): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(115,69): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(115,47): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(115,22): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
-  Generating Code...
+﻿  main.cpp
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(104,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(123,94): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(123,69): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(123,47): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(123,22): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
   OpenGLCourseApp.vcxproj -> E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Debug\OpenGLCourseApp.exe
