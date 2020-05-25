@@ -4,12 +4,12 @@ Window::Window()
 {
 	width = 800;
 	height = 600;
-	xChange = 0.0f;
-	yChange = 0.0f;
 	for (size_t i = 0; i < 1024; i++)
 	{
 		keys[i] = 0;
 	}
+	xChange = 0.0f;
+	yChange = 0.0f;
 }
 
 Window::Window(GLint windowWidth, GLint windowHeight)
@@ -20,6 +20,8 @@ Window::Window(GLint windowWidth, GLint windowHeight)
 	{
 		keys[i] = 0;
 	}
+	xChange = 0.0f;
+	yChange = 0.0f;
 }
 
 int Window::Initialise()
@@ -91,12 +93,10 @@ void Window::handleKeys(GLFWwindow* window, int key, int code, int action, int m
 		if (action == GLFW_PRESS)
 		{
 			theWindow->keys[key] = true;
-			printf("Pressed: %d\n", key);
 		}
 		else if (action == GLFW_RELEASE)
 		{
 			theWindow->keys[key] = false;
-			printf("Released: %d\n", key);
 		}
 	}
 }
@@ -116,10 +116,8 @@ void Window::handleMouse(GLFWwindow* window, double xPos, double yPos)
 	theWindow->lastY = yPos;
 }
 
-
 Window::~Window()
 {
 	glfwDestroyWindow(mainWindow);
 	glfwTerminate();
 }
-
