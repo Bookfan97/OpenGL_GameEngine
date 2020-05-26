@@ -16,9 +16,9 @@ PointLight::PointLight(GLfloat red, GLfloat green, GLfloat blue, GLfloat aIntens
 	exponent = exp;
 }
 
-void PointLight::UseLight(GLfloat ambientIntensityLocation, GLfloat ambientColourLocation, GLfloat diffuseIntensityLocation, GLfloat positionLocation, GLfloat constantLocation, GLfloat linearLocation, GLfloat exponentLocation)
+void PointLight::UseLight(GLfloat ambientIntensityLocation, GLfloat ambientcolorLocation, GLfloat diffuseIntensityLocation, GLfloat positionLocation, GLfloat constantLocation, GLfloat linearLocation, GLfloat exponentLocation)
 {
-	glUniform3f(ambientColourLocation, colour.x, colour.y, colour.z);
+	glUniform3f(ambientcolorLocation, color.x, color.y, color.z);
 	glUniform1f(ambientIntensityLocation, ambientIntensity);
 	glUniform1f(diffuseIntensityLocation, diffuseIntensity);
 	glUniform3f(positionLocation, position.x, position.y, position.z);
