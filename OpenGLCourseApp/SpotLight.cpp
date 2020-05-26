@@ -14,9 +14,12 @@ SpotLight::SpotLight(GLfloat red, GLfloat green, GLfloat blue, GLfloat aIntensit
 	procEdge = cosf(glm::radians(edge));
 }
 
-void SpotLight::UseLight(GLuint ambientIntensityLocation, GLuint ambientcolorLocation, GLuint diffuseIntensityLocation, GLuint positionLocation, GLuint directionLocation, GLuint constantLocation, GLuint linearLocation, GLuint exponentLocation, GLuint edgeLocation)
+void SpotLight::UseLight(GLuint ambientIntensityLocation, GLuint ambientColorLocation,
+	GLuint diffuseIntensityLocation, GLuint positionLocation, GLuint directionLocation,
+	GLuint constantLocation, GLuint linearLocation, GLuint exponentLocation,
+	GLuint edgeLocation)
 {
-	glUniform3f(ambientcolorLocation, color.x, color.y, color.z);
+	glUniform3f(ambientColorLocation, color.x, color.y, color.z);
 	glUniform1f(ambientIntensityLocation, ambientIntensity);
 	glUniform1f(diffuseIntensityLocation, diffuseIntensity);
 	glUniform3f(positionLocation, position.x, position.y, position.z);

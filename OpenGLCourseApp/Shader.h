@@ -25,22 +25,23 @@ public:
 	GLuint GetSpecularIntensityLocation();
 	GLuint GetShininessLocation();
 	GLuint GetEyePositionLocation();
-	void SetDirectionalLight(DirectionalLight *dLight);
-	void SetPointLight(PointLight* pLight, unsigned int lightCount);
-	void SetSpotLights(PointLight* sLight, unsigned int lightCount);
+	void SetDirectionalLight(DirectionalLight* dLight);
+	void SetPointLights(PointLight* pLight, unsigned int lightCount);
+	void SetSpotLights(SpotLight* sLight, unsigned int lightCount);
 	void UseShader();
 	void ClearShader();
 	~Shader();
 private:
 	int pointLightCount, spotLightCount;
-	GLuint shaderID, uniformProjection, uniformModel, uniformView, uniformEyePosition, uniformSpecularIntensity, uniformShininess, uniformPointLightCount;
+	GLuint shaderID, uniformProjection, uniformModel, uniformView, uniformEyePosition, uniformSpecularIntensity, uniformShininess;
 	struct
 	{
 		GLuint uniformColor;
 		GLuint uniformAmbientIntensity;
 		GLuint uniformDiffuseIntensity;
 		GLuint uniformDirection;
-	} uniformDirectionalLight;	
+	} uniformDirectionalLight;
+	GLuint uniformPointLightCount;
 	struct
 	{
 		GLuint uniformColor;
@@ -52,7 +53,7 @@ private:
 		GLuint uniformExponent;
 	} uniformPointLight[MAX_POINT_LIGHTS];
 	GLuint uniformSpotLightCount;
-	struct
+	struct 
 	{
 		GLuint uniformColor;
 		GLuint uniformAmbientIntensity;

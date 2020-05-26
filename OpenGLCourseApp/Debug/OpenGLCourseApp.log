@@ -1,123 +1,33 @@
-﻿  Shader.cpp
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(37,31): error C2061: syntax error: identifier 'SpotLight'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.h(12,1): error C2011: 'Shader': 'class' type redefinition
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(4,9): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(5,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(6,2): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(7,2): error C2065: 'uniformModel': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(8,2): error C2065: 'uniformProjection': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(9,2): error C2065: 'pointLightCount': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(10,2): error C2065: 'spotLightCount': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(11,1): warning C4508: '{ctor}': function should return a value; 'void' return type assumed
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(13,14): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(15,2): error C3861: 'CompileShader': identifier not found
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(18,14): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(20,29): error C3861: 'ReadFile': identifier not found
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(21,31): error C3861: 'ReadFile': identifier not found
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(24,2): error C3861: 'CompileShader': identifier not found
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(27,21): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(45,14): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(47,2): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(48,7): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(53,12): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(53,2): error C3861: 'AddShader': identifier not found
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(54,12): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(54,2): error C3861: 'AddShader': identifier not found
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(57,16): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(58,17): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(61,23): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(65,20): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(66,17): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(69,23): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(73,2): error C2065: 'uniformProjection': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(73,43): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(74,2): error C2065: 'uniformModel': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(74,38): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(75,2): error C2065: 'uniformView': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(75,37): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(76,2): error C2065: 'uniformDirectionalLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(76,62): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(77,2): error C2065: 'uniformDirectionalLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(77,73): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(78,2): error C2065: 'uniformDirectionalLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(78,66): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(79,2): error C2065: 'uniformDirectionalLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(79,73): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(80,2): error C2065: 'uniformSpecularIntensity': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(80,50): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(81,2): error C2065: 'uniformShininess': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(81,42): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(82,2): error C2065: 'uniformEyePosition': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(82,44): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(83,2): error C2065: 'uniformPointLightCount': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(83,48): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(88,3): error C2065: 'uniformPointLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(88,60): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(90,3): error C2065: 'uniformPointLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(90,71): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(92,3): error C2065: 'uniformPointLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(92,71): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(94,3): error C2065: 'uniformPointLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(94,63): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(96,3): error C2065: 'uniformPointLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(96,63): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(98,3): error C2065: 'uniformPointLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(98,61): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(100,3): error C2065: 'uniformPointLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(100,63): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(102,2): error C2065: 'uniformSpotLightCount': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(102,47): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(107,3): error C2065: 'uniformSpotLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(107,59): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(109,3): error C2065: 'uniformSpotLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(109,70): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(111,3): error C2065: 'uniformSpotLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(111,70): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(113,3): error C2065: 'uniformSpotLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(113,62): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(115,3): error C2065: 'uniformSpotLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(115,62): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(117,3): error C2065: 'uniformSpotLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(117,60): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(119,3): error C2065: 'uniformSpotLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(119,62): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(121,3): error C2065: 'uniformSpotLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(121,63): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(123,3): error C2065: 'uniformSpotLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(123,58): error C2065: 'shaderID': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(127,16): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(129,9): error C2065: 'uniformProjection': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(132,16): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(134,9): error C2065: 'uniformModel': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(137,16): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(139,9): error C2065: 'uniformView': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(142,16): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(144,9): error C2065: 'uniformDirectionalLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(147,16): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(149,9): error C2065: 'uniformDirectionalLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(152,16): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(154,9): error C2065: 'uniformDirectionalLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(157,16): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(159,9): error C2065: 'uniformDirectionalLight': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(162,16): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(164,9): error C2065: 'uniformSpecularIntensity': undeclared identifier
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(167,16): error C2027: use of undefined type 'Shader'
-C:\Users\shelt\AppData\Local\Temp\Temp1_original (7).zip\OpenGLCourseApp\OpenGLCourseApp\Shader.h(15): message : see declaration of 'Shader'
-E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(167,36): fatal error C1003: error count exceeds 100; stopping compilation
+﻿  Camera.cpp
+  DirectionalLight.cpp
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\DirectionalLight.cpp(18,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\DirectionalLight.cpp(19,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\DirectionalLight.cpp(20,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\DirectionalLight.cpp(21,14): warning C4244: 'argument': conversion from 'GLfloat' to 'GLint', possible loss of data
+  Light.cpp
+  main.cpp
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\main.cpp(153,15): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+  Material.cpp
+  Mesh.cpp
+  Model.cpp
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Model.cpp(26,10): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'const std::string'
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Model.cpp(94,13): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
+  PointLight.cpp
+  Shader.cpp
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(179,75): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(179,26): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(178,91): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Shader.cpp(178,42): warning C4244: 'argument': conversion from 'GLuint' to 'GLfloat', possible loss of data
   SpotLight.cpp
   Texture.cpp
+  Window.cpp
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(109,22): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(110,22): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(113,28): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(114,40): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(115,21): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(116,21): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
   Generating Code...
+E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Window.cpp(62): warning C4715: 'Window::Initialise': not all control paths return a value
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  OpenGLCourseApp.vcxproj -> E:\Github\OpenGL_GameEngine\OpenGLCourseApp\Debug\OpenGLCourseApp.exe
