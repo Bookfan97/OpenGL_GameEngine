@@ -9,12 +9,10 @@ void Model::RenderModel()
 	for (size_t i = 0; i < meshList.size(); i++)
 	{
 		unsigned int materialIndex = meshToTex[i];
-
 		if (materialIndex < textureList.size() && textureList[materialIndex])
 		{
 			textureList[materialIndex]->UseTexture();
 		}
-
 		meshList[i]->RenderMesh();
 	}
 }
@@ -23,15 +21,12 @@ void Model::LoadModel(const std::string& fileName)
 {
 	Assimp::Importer importer;
 	const aiScene* scene = importer.ReadFile(fileName, aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_GenSmoothNormals | aiProcess_JoinIdenticalVertices);
-
 	if (!scene)
 	{
 		printf("Model (%s) failed to load: %s", fileName, importer.GetErrorString());
 		return;
 	}
-
 	LoadNode(scene->mRootNode, scene);
-
 	LoadMaterials(scene);
 }
 
@@ -41,7 +36,6 @@ void Model::LoadNode(aiNode* node, const aiScene* scene)
 	{
 		LoadMesh(scene->mMeshes[node->mMeshes[i]], scene);
 	}
-
 	for (size_t i = 0; i < node->mNumChildren; i++)
 	{
 		LoadNode(node->mChildren[i], scene);
@@ -52,7 +46,6 @@ void Model::LoadMesh(aiMesh* mesh, const aiScene* scene)
 {
 	std::vector<GLfloat> vertices;
 	std::vector<unsigned int> indices;
-
 	for (size_t i = 0; i < mesh->mNumVertices; i++)
 	{
 		vertices.insert(vertices.end(), { mesh->mVertices[i].x, mesh->mVertices[i].y, mesh->mVertices[i].z });
@@ -65,7 +58,6 @@ void Model::LoadMesh(aiMesh* mesh, const aiScene* scene)
 		}
 		vertices.insert(vertices.end(), { -mesh->mNormals[i].x, -mesh->mNormals[i].y, -mesh->mNormals[i].z });
 	}
-
 	for (size_t i = 0; i < mesh->mNumFaces; i++)
 	{
 		aiFace face = mesh->mFaces[i];
@@ -74,7 +66,6 @@ void Model::LoadMesh(aiMesh* mesh, const aiScene* scene)
 			indices.push_back(face.mIndices[j]);
 		}
 	}
-
 	Mesh* newMesh = new Mesh();
 	newMesh->CreateMesh(&vertices[0], &indices[0], vertices.size(), indices.size());
 	meshList.push_back(newMesh);
@@ -84,13 +75,10 @@ void Model::LoadMesh(aiMesh* mesh, const aiScene* scene)
 void Model::LoadMaterials(const aiScene* scene)
 {
 	textureList.resize(scene->mNumMaterials);
-
 	for (size_t i = 0; i < scene->mNumMaterials; i++)
 	{
 		aiMaterial* material = scene->mMaterials[i];
-
 		textureList[i] = nullptr;
-
 		if (material->GetTextureCount(aiTextureType_DIFFUSE))
 		{
 			aiString path;
@@ -98,11 +86,8 @@ void Model::LoadMaterials(const aiScene* scene)
 			{
 				int idx = std::string(path.data).rfind("\\");
 				std::string filename = std::string(path.data).substr(idx + 1);
-
 				std::string texPath = std::string("Textures/") + filename;
-
 				textureList[i] = new Texture(texPath.c_str());
-
 				if (!textureList[i]->LoadTexture())
 				{
 					printf("Failed to load texture at: %s\n", texPath);
@@ -111,7 +96,6 @@ void Model::LoadMaterials(const aiScene* scene)
 				}
 			}
 		}
-
 		if (!textureList[i])
 		{
 			textureList[i] = new Texture("Textures/plain.png");
@@ -130,7 +114,6 @@ void Model::ClearModel()
 			meshList[i] = nullptr;
 		}
 	}
-
 	for (size_t i = 0; i < textureList.size(); i++)
 	{
 		if (textureList[i])
@@ -140,7 +123,6 @@ void Model::ClearModel()
 		}
 	}
 }
-
 Model::~Model()
 {
 }
