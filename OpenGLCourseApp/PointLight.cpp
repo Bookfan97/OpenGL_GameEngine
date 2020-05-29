@@ -1,5 +1,7 @@
 #include "PointLight.h"
 
+
+
 PointLight::PointLight() : Light()
 {
 	position = glm::vec3(0.0f, 0.0f, 0.0f);
@@ -19,9 +21,12 @@ PointLight::PointLight(GLfloat shadowWidth, GLfloat shadowHeight,
 	constant = con;
 	linear = lin;
 	exponent = exp;
+
 	float aspect = (float)shadowWidth / (float)shadowHeight;
+
 	farPlane = far;
 	lightProj = glm::perspective(glm::radians(90.0f), aspect, near, far);
+
 	shadowMap = new OmniShadowMap();
 	shadowMap->Init(shadowWidth, shadowHeight);
 }
@@ -33,6 +38,7 @@ void PointLight::UseLight(GLuint ambientIntensityLocation, GLuint ambientColorLo
 	glUniform3f(ambientColorLocation, color.x, color.y, color.z);
 	glUniform1f(ambientIntensityLocation, ambientIntensity);
 	glUniform1f(diffuseIntensityLocation, diffuseIntensity);
+
 	glUniform3f(positionLocation, position.x, position.y, position.z);
 	glUniform1f(constantLocation, constant);
 	glUniform1f(linearLocation, linear);
