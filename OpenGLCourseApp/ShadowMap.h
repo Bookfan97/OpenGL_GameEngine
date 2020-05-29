@@ -8,13 +8,11 @@ class ShadowMap
 {
 public:
 	ShadowMap();
-
-	virtual bool Init(unsigned int width, unsigned int height);
+	virtual bool Init(GLuint width, GLuint height);
 	virtual void Write();
-	virtual void Read(GLenum TextureUnit);
+	virtual void Read(GLenum textureUnit);
 	GLuint GetShadowWidth() { return shadowWidth; }
 	GLuint GetShadowHeight() { return shadowHeight; }
-
 	~ShadowMap();
 protected:
 	GLuint FBO, shadowMap;
